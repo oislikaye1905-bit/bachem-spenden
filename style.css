@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Logo oben rechts */
+.logo {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  width: 230px;
+  height: auto;
+}
+
+/* Box in der Mitte */
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  width: 450px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+#amount {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.buttons button {
+  font-size: 22px;
+  padding: 15px 25px;
+  margin: 10px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #0b4a8b;
+  color: white;
+  transition: 0.2s;
+}
+
+/* Hover Effekt */
+.buttons button:hover {
+  background: #08386a;
+}
