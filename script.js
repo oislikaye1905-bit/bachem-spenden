@@ -1,6 +1,6 @@
 let amount = 0;
 let currentDisplay = 0;
-const goal = 1500;
+const goal = 2910; // 🔥 angepasst
 let animationId = null;
 
 window.onload = function () {
@@ -30,7 +30,6 @@ function updateProgress() {
   percentText.innerText = Math.round(percent) + "%";
   progressFill.style.width = percent + "%";
 
-  
   if (percent < 100) {
     progressFill.style.background = "linear-gradient(90deg, #4fa3ff, #1e6eff)";
   } else {

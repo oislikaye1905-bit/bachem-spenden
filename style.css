@@ -60,15 +60,12 @@ h1 {
 #amount {
   font-size: 78px;
   font-weight: bold;
-  text-shadow: 0 6px 20px rgba(0,0,0,0.2);
 }
 
 .goal-row {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
-  font-size: 16px;
-  opacity: 0.9;
 }
 
 .progress-bar {
@@ -86,18 +83,21 @@ h1 {
   transition: width 0.4s ease, background 0.4s ease;
 }
 
-/* Buttons */
-.buttons {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 16px;
+/* Hauptbutton */
+.main-action {
+  margin-top: 10px;
 }
 
+.big-btn {
+  width: 100%;
+  padding: 26px;
+  font-size: 28px;
+  border-radius: 24px;
+}
+
+/* Basis Button */
 .btn {
   border: none;
-  border-radius: 20px;
-  padding: 20px;
-  font-size: 22px;
   font-weight: bold;
   cursor: pointer;
   color: white;
@@ -108,13 +108,28 @@ h1 {
 
 .btn:hover {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, #66b3ff, #2b7dff);
 }
 
 .btn:active {
   transform: scale(0.97);
 }
 
-.reset {
+/* 🔥 Reset unten rechts */
+.reset-floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  font-size: 14px;
+  border-radius: 14px;
+  border: none;
+  cursor: pointer;
   background: rgba(255,255,255,0.2);
+  color: white;
+  backdrop-filter: blur(10px);
+  transition: 0.2s;
+}
+
+.reset-floating:hover {
+  background: rgba(255,255,255,0.3);
 }

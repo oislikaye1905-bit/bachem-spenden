@@ -22,7 +22,7 @@
     </div>
 
     <div class="goal-row">
-      <span>Letztes Jahr: 1'500 CHF</span>
+      <span>Letztes Jahr: 2'910 CHF</span>
       <span id="percentText">0%</span>
     </div>
 
@@ -30,11 +30,15 @@
       <div id="progressFill" class="progress-fill"></div>
     </div>
 
-    <div class="buttons">
-      <button class="btn" onclick="changeAmount(10)">+10 CHF</button>
-      <button class="btn reset" onclick="resetAmount()">Reset</button>
+    <!-- Hauptbutton -->
+    <div class="main-action">
+      <button class="btn big-btn" onclick="changeAmount(10)">+10 CHF</button>
     </div>
+
   </div>
+
+  <!-- 🔥 Reset ausserhalb -->
+  <button class="reset-floating" onclick="resetAmount()">Reset</button>
 
   <script src="script.js"></script>
 </body>
